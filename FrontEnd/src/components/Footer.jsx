@@ -9,7 +9,8 @@ const Footer = () => {
       <Container>
         <Row className="gy-4">
           {/* Brand and Description */}
-          <Col lg={3} md={6}>
+          
+          <Col lg={3} md={6}> 
             <div className="d-flex align-items-center mb-3">
               <div 
                 className="bg-primary rounded-circle d-flex justify-content-center align-items-center me-2" 
