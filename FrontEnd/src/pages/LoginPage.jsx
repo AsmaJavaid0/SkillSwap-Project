@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import LoginForm from '../components/LoginForm';
+import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
 
@@ -14,9 +15,15 @@ const LoginPage = () => {
           <img src="images/logo.png" alt="Logo" height="32" className="me-2" />
           <span style={{ color: '#2D2D2D' }}>SkillSwap</span>
         </div>
-        <div className="text-muted small">
-          New here? <a href="#" className="text-primary text-decoration-none fw-bold ms-1">Sign up</a>
-        </div>
+        <div className="text-muted small d-flex align-items-center">
+  New here? 
+  <Link 
+    to="/signup" 
+    className="btn btn-primary btn-sm fw-bold ms-2"
+  >
+    Sign up
+  </Link>
+</div>
       </header>
 
       {/* 2. THE MAIN BODY (SPLIT SCREEN) */}
