@@ -4,7 +4,6 @@ import LoginForm from '../components/LoginForm';
 import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
-
 const LoginPage = () => {
   return (
     <Container fluid className="vh-100 d-flex flex-column p-0 bg-white">
@@ -16,47 +15,24 @@ const LoginPage = () => {
           <span style={{ color: '#2D2D2D' }}>SkillSwap</span>
         </div>
         <div className="text-muted small d-flex align-items-center">
-  New here? 
-  <Link 
-    to="/signup" 
-    className="btn btn-primary btn-sm fw-bold ms-2"
-  >
-    Sign up
-  </Link>
-</div>
+          New here? 
+          <Link 
+            to="/signup" 
+            className="btn btn-primary btn-sm fw-bold ms-2"
+          >
+            Sign up
+          </Link>
+        </div>
       </header>
 
-      {/* 2. THE MAIN BODY (SPLIT SCREEN) */}
-      <Row className="flex-grow-1 m-0">
+      {/* 2. THE MAIN BODY (CENTERED CONTENT) */}
+      <Row className="flex-grow-1 m-0 justify-content-center align-items-center">
         
-        {/* LEFT SIDE: Your LoginForm fits here */}
-        <Col lg={7} className="d-flex align-items-center justify-content-center py-5">
-          <LoginForm />
-        </Col>
-
-        {/* RIGHT SIDE: The Purple Panel with Quote */}
-        <Col lg={5} className="d-none d-lg-flex flex-column align-items-center justify-content-center p-5 right-panel-bg">
-          <div className="quote-container mb-5">
-             <span className="quote-mark">“</span>
-             <h4 className="quote-text">
-               The beautiful thing about learning is that no one can take it away from you.
-             </h4>
-             <span className='quote-mark'>”</span>
-             <p className="quote-author">— B.B. King</p>
-          </div>
+        {/* Changed lg={7} to md={6} or lg={5} for a tighter, centered look */}
+        <Col xs={11} sm={8} md={6} lg={4} className="py-5">
           
-          <img 
-            src="https://illustrations.popsy.co/purple/online-learning.svg" 
-            alt="Learning Illustration" 
-            className="img-fluid illustration-img"
-          />
-
-          {/* Dots at the bottom */}
-          <div className="d-flex gap-2 mt-5">
-            <div className="dot active"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-          </div>
+          
+          <LoginForm />
         </Col>
 
       </Row>
