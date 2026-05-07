@@ -1,0 +1,46 @@
+:root {
+  --skillswap-purple: #5b58e7;
+}
+
+.text-primary {
+  color: var(--skillswap-purple) !important;
+}
+
+.custom-btn-primary {
+  background-color: var(--skillswap-purple) !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.custom-btn-primary:hover {
+  background-color: #4a47d1 !important;
+}
+
+/* Matching the rounded inputs from the image */
+.custom-input-group .input-group-text, 
+.custom-input-group .form-control {
+  border-color: #dee2e6 !important;
+}
+
+.custom-input-group .input-group-text {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.custom-input-group .form-control {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* Specifically for the password eye icon group */
+.custom-input-group .form-control + .input-group-text {
+  border-radius: 0 8px 8px 0 !important;
+  border-left: 0 !important;
+}
+
+.social-btn {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 8px !important;
+}
+
+.social-btn:hover {
+  background-color: #f8f9fa !important;
+}

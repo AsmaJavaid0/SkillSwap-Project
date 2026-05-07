@@ -25,7 +25,8 @@ const Navbar = () => {
                     <button className="nav-bell" title="Notifications"><i class="bi bi-bell"></i></button>
                     <div className="nav-avatar">P</div>
                 </div>
-            </nav>
+
+                                 </nav>
 
 
         </>
