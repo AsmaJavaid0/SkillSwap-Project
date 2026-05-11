@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
     return (
@@ -14,16 +15,17 @@ const Navbar = () => {
                         <circle cx="21" cy="14" r="3" fill="#5567e8" />
                     </svg>
                     SkillSwap
+                    
                 </a>
                 <div className="nav-links">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     <a href="#">Explore Skills</a>
                     <a href="#">My Matches</a>
                     <a href="#">Messages</a>
                 </div>
                 <div className="nav-right">
                     <button className="nav-bell" title="Notifications"><i class="bi bi-bell"></i></button>
-                    <div className="nav-avatar">P</div>
+                    <Link to="/profile" className="nav-avatar">P</Link>
                 </div>
 
                                  </nav>
