@@ -7,7 +7,7 @@ const Navbar = () => {
 
             {/* NAV */}
             <nav>
-                <a className="nav-logo" href="#">
+                <a className="nav-logo" href="/">
                     <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 14C7 10.134 10.134 7 14 7" stroke="#3d52d5" strokeWidth="2.5" strokeLinecap="round" />
                         <path d="M21 14C21 17.866 17.866 21 14 21" stroke="#3d52d5" strokeWidth="2.5" strokeLinecap="round" />
